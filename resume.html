@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Myon McGee's Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="icon" href="images/superhero.png" />
+    <title>Myon McGee's Personal Website</title>
   </head>
   <body id="about">
     <div id="loader" class="center"></div>
@@ -14,12 +15,16 @@
         <h1>Myon L. McGee</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
+        <span onclick="openNav()"><i class="material-icons">menu</i></span>
     </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+    </div>
+
     <main>
     <h1>Resume</h1>
     <h2>Objective</h2>
@@ -85,6 +90,7 @@
     <h2>Activities</h2>
     <hr>
     <ul>
+        <li>National Society of Black Engineers Membership Chair (2020-present)</li>
         <li>National Society of Black Engineers Senator (2020)</li>
         <li>Cyber-Security Club (2019-present)</li>
         <li>National Society of Black Engineers Member (2019-present)</li>
@@ -99,7 +105,7 @@
     </ul>
     </main>
     <footer>
-        You can email me at mcgeeml@rosehulman.edu
+        You can email me at mcgeeml@rosehulman.edu if you have any further questions.
     </footer>
     <script src="scripts/main.js"></script>
   </body>

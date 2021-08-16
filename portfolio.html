@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Myon McGee's Personal Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="icon" href="images/superhero.png" />
+    <title>Myon McGee's Personal Portfolio</title>
   </head>
   <body id="portfolio">
     <div id="loader" class="center"></div>
@@ -14,12 +15,16 @@
         <h1>Myon L. McGee</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
+      <span onclick="openNav()"><i class="material-icons">menu</i></span>
     </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+    </div>
+
     <main>
         <h1>Portfolio</h1>
         <ul id="portfolioItems">
